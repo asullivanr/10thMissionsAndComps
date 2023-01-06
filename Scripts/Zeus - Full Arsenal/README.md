@@ -1,0 +1,1 @@
+Paste the contents of arsenal.sqf into the init field of any box to turn it into both an ACE arsenal and a regular arsenal.
