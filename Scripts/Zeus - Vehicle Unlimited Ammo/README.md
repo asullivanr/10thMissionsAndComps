@@ -1,3 +1,3 @@
-Paste the contents of ammo.sqf into the init field of any vehicle or turret to turn it into both an ACE arsenal and a regular arsenal.
+Paste the contents of ammo.sqf into the init field of any vehicle or turret to give that vehicle unlimited ammo and no reload.
 
 Can work on non-vehicle units.
