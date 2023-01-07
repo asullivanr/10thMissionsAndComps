@@ -1,0 +1,8 @@
+version=54;
+name="Healing Terminal";
+author="Akira";
+category="EdSubcat_Tools";
+requiredAddons[]=
+{
+	"OPTRE_BW_DoorConsole"
+};
