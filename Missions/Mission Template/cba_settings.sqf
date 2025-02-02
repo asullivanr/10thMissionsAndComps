@@ -18,21 +18,19 @@ force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
-ace_advanced_fatigue_deployedSwayFactor = 1;
 force ace_advanced_fatigue_enabled = false;
 force ace_advanced_fatigue_enableStaminaBar = true;
-ace_advanced_fatigue_fadeStaminaBar = true;
+force ace_advanced_fatigue_fadeStaminaBar = true;
 force ace_advanced_fatigue_loadFactor = 1;
 force ace_advanced_fatigue_performanceFactor = 1;
 force ace_advanced_fatigue_recoveryFactor = 1;
-ace_advanced_fatigue_restedSwayFactor = 1;
-force ace_advanced_fatigue_swayFactor = 1;
 force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
 force ace_advanced_throwing_enabled = true;
 force ace_advanced_throwing_enablePickUp = true;
 force ace_advanced_throwing_enablePickUpAttached = true;
+force ace_advanced_throwing_enableTempWindInfo = true;
 force ace_advanced_throwing_showMouseControls = true;
 force ace_advanced_throwing_showThrowArc = true;
 
@@ -74,19 +72,23 @@ force ace_captives_requireSurrenderAi = false;
 
 // ACE Casings
 force ace_casings_enabled = false;
-ace_casings_maxCasings = 250;
+force ace_casings_maxCasings = 250;
 
 // ACE Common
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = false;
 force ace_common_checkPBOsWhitelist = "[]";
+force ace_common_deployedSwayFactor = 1;
 force ace_common_displayTextColor = [0,0,0,0.1];
 force ace_common_displayTextFontColor = [1,1,1,1];
+force ace_common_enableSway = false;
 ace_common_epilepsyFriendlyMode = false;
 ace_common_progressBarInfo = 2;
+force ace_common_restedSwayFactor = 1;
 force ace_common_settingFeedbackIcons = 1;
 force ace_common_settingProgressBarLocation = 0;
+force ace_common_swayFactor = 1;
 
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 0;
@@ -106,10 +108,10 @@ force ace_csw_handleExtraMagazinesType = 0;
 force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Dragging
-ace_dragging_allowRunWithLightweight = true;
-ace_dragging_dragAndFire = true;
-ace_dragging_skipContainerWeight = false;
-ace_dragging_weightCoefficient = 1;
+force ace_dragging_allowRunWithLightweight = true;
+force ace_dragging_dragAndFire = true;
+force ace_dragging_skipContainerWeight = false;
+force ace_dragging_weightCoefficient = 1;
 
 // ACE Explosives
 force ace_explosives_customTimerDefault = 30;
@@ -136,7 +138,7 @@ force acex_field_rations_waterSourceActions = 2;
 force ace_fire_dropWeapon = 1;
 force ace_fire_enabled = true;
 force ace_fire_enableFlare = false;
-ace_fire_enableScreams = true;
+force ace_fire_enableScreams = true;
 
 // ACE Fortify
 force ace_fortify_markObjectsOnMap = 1;
@@ -171,7 +173,7 @@ force acex_headless_log = false;
 force acex_headless_transferLoadout = 2;
 
 // ACE Hearing
-force ace_hearing_autoAddEarplugsToUnits = true;
+ace_hearing_autoAddEarplugsToUnits = 1;
 force ace_hearing_disableEarRinging = false;
 force ace_hearing_earplugsVolume = 0.5;
 force ace_hearing_enableCombatDeafness = false;
@@ -179,11 +181,11 @@ force ace_hearing_enabledForZeusUnits = true;
 force ace_hearing_unconsciousnessVolume = 0.4;
 
 // ACE Interaction
-force ace_interaction_disableNegativeRating = false;
+force ace_interaction_disableNegativeRating = true;
 force ace_interaction_enableGroupRenaming = true;
-ace_interaction_enableMagazinePassing = true;
+force ace_interaction_enableMagazinePassing = true;
 force ace_interaction_enableTeamManagement = true;
-ace_interaction_enableWeaponAttachments = true;
+force ace_interaction_enableWeaponAttachments = true;
 force ace_interaction_interactWithTerrainObjects = false;
 
 // ACE Interaction Menu
@@ -208,26 +210,30 @@ ace_interact_menu_textSize = 2;
 ace_interact_menu_useListMenu = true;
 ace_interact_menu_useListMenuSelf = true;
 
+// ACE Kill Tracker
+ace_killtracker_trackAI = true;
+
 // ACE Logistics
 ace_cargo_carryAfterUnload = true;
 force ace_cargo_enable = true;
+ace_cargo_enableDeploy = true;
 ace_cargo_enableRename = true;
 force ace_cargo_loadTimeCoefficient = 5;
 ace_cargo_openAfterUnload = 0;
 force ace_cargo_paradropTimeCoefficent = 2.5;
 force ace_rearm_distance = 20;
-ace_rearm_enabled = true;
+force ace_rearm_enabled = true;
 force ace_rearm_level = 0;
 force ace_rearm_supply = 0;
-ace_refuel_cargoRate = 10;
+force ace_refuel_cargoRate = 10;
 force ace_refuel_hoseLength = 12;
 force ace_refuel_progressDuration = 2;
 force ace_refuel_rate = 1;
 force ace_towing_addRopeToVehicleInventory = true;
 
 // ACE Magazine Repack
-ace_magazinerepack_repackAnimation = true;
-ace_magazinerepack_repackLoadedMagazines = true;
+force ace_magazinerepack_repackAnimation = true;
+force ace_magazinerepack_repackLoadedMagazines = true;
 force ace_magazinerepack_timePerAmmo = 1.5;
 force ace_magazinerepack_timePerBeltLink = 8;
 force ace_magazinerepack_timePerMagazine = 2;
@@ -247,6 +253,9 @@ force ace_markers_moveRestriction = 0;
 force ace_markers_timestampEnabled = true;
 force ace_markers_timestampFormat = "HH:MM";
 force ace_markers_timestampHourFormat = 24;
+ace_markers_timestampTimezone = 0;
+ace_markers_TimestampUTCMinutesOffset = 0;
+ace_markers_timestampUTCOffset = 0;
 
 // ACE Map Gestures
 force ace_map_gestures_allowCurator = true;
@@ -263,16 +272,17 @@ force ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Map Tools
 force ace_maptools_drawStraightLines = true;
+ace_maptools_plottingBoardAllowChannelDrawing = 1;
 force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force ace_medical_ai_enabledFor = 2;
+force ace_medical_ai_enabledFor = 0;
 force ace_medical_ai_requireItems = 0;
 force ace_medical_AIDamageThreshold = 0.3;
 force ace_medical_bleedingCoefficient = 1;
-force ace_medical_blood_bloodLifetime = 900;
+force ace_medical_blood_bloodLifetime = 300;
 force ace_medical_blood_enabledFor = 2;
-force ace_medical_blood_maxBloodObjects = 200;
+force ace_medical_blood_maxBloodObjects = 50;
 force ace_medical_deathChance = 1;
 force ace_medical_dropWeaponUnconsciousChance = 0;
 force ace_medical_enableVehicleCrashes = true;
@@ -286,7 +296,7 @@ force ace_medical_painCoefficient = 1;
 force ace_medical_painUnconsciousChance = 0.1;
 force ace_medical_painUnconsciousThreshold = 0.5;
 force ace_medical_playerDamageThreshold = 1;
-force ace_medical_spontaneousWakeUpChance = 1;
+force ace_medical_spontaneousWakeUpChance = 0.895316;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
 force ace_medical_statemachine_AIUnconsciousness = true;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
@@ -309,31 +319,33 @@ force ace_medical_treatment_clearTrauma = 1;
 force ace_medical_treatment_consumePAK = 1;
 force ace_medical_treatment_consumeSurgicalKit = 0;
 force ace_medical_treatment_convertItems = 0;
-force ace_medical_treatment_cprSuccessChanceMax = 0.4;
+force ace_medical_treatment_cprSuccessChanceMax = 0.803848;
 force ace_medical_treatment_cprSuccessChanceMin = 0.4;
 force ace_medical_treatment_graveDiggingMarker = false;
 force ace_medical_treatment_holsterRequired = 0;
-force ace_medical_treatment_litterCleanupDelay = 600;
+force ace_medical_treatment_litterCleanupDelay = 400;
 force ace_medical_treatment_locationEpinephrine = 0;
 force ace_medical_treatment_locationIV = 0;
 force ace_medical_treatment_locationPAK = 0;
 force ace_medical_treatment_locationsBoostTraining = false;
 force ace_medical_treatment_locationSurgicalKit = 0;
-force ace_medical_treatment_maxLitterObjects = 200;
+force ace_medical_treatment_maxLitterObjects = 50;
 force ace_medical_treatment_medicEpinephrine = 0;
 force ace_medical_treatment_medicIV = 1;
 force ace_medical_treatment_medicPAK = 1;
 force ace_medical_treatment_medicSurgicalKit = 1;
 force ace_medical_treatment_timeCoefficientPAK = 1;
-force ace_medical_treatment_treatmentTimeAutoinjector = 5;
+force ace_medical_treatment_treatmentTimeAutoinjector = 7;
 force ace_medical_treatment_treatmentTimeBodyBag = 15;
+force ace_medical_treatment_treatmentTimeCoeffZeus = 1;
 force ace_medical_treatment_treatmentTimeCPR = 15;
-ace_medical_treatment_treatmentTimeGrave = 30;
+force ace_medical_treatment_treatmentTimeGrave = 30;
 force ace_medical_treatment_treatmentTimeIV = 12;
 force ace_medical_treatment_treatmentTimeSplint = 7;
 force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundReopenChance = 1;
 force ace_medical_treatment_woundStitchTime = 5;
+force ace_medical_vitals_simulateSpO2 = false;
 
 // ACE Medical Interface
 force ace_medical_feedback_bloodVolumeEffectType = 0;
@@ -369,6 +381,7 @@ force ace_medical_gui_openAfterTreatment = true;
 ace_medical_gui_peekMedicalInfoReleaseDelay = 1;
 ace_medical_gui_peekMedicalOnHit = false;
 ace_medical_gui_peekMedicalOnHitDuration = 1;
+ace_medical_gui_showBleeding = 2;
 force ace_medical_gui_showBloodlossEntry = true;
 ace_medical_gui_showDamageEntry = false;
 force ace_medical_gui_tourniquetWarning = true;
@@ -408,7 +421,7 @@ force ace_overheating_heatCoef = 1;
 force ace_overheating_jamChanceCoef = 1;
 force ace_overheating_overheatingDispersion = true;
 force ace_overheating_overheatingRateOfFire = true;
-ace_overheating_particleEffectsAndDispersionDistance = 3000;
+force ace_overheating_particleEffectsAndDispersionDistance = 3000;
 force ace_overheating_showParticleEffects = true;
 force ace_overheating_showParticleEffectsForEveryone = false;
 force ace_overheating_suppressorCoef = 1;
@@ -568,48 +581,6 @@ force ace_vehiclelock_defaultLockpickStrength = 10;
 force ace_vehiclelock_lockVehicleInventory = false;
 force ace_vehiclelock_vehicleStartingLockState = -1;
 
-// ACE Vehicle Medical
-MIRA_Vehicle_Medical_CacheInterval = 0.4;
-MIRA_Vehicle_Medical_EnableAVM = true;
-MIRA_Vehicle_Medical_EnableIncapacitated = false;
-MIRA_Vehicle_Medical_EnableStable = true;
-MIRA_Vehicle_Medical_EnableUnstable = true;
-MIRA_Vehicle_Medical_Incapacitated_CanUnloadAll = true;
-MIRA_Vehicle_Medical_Incapacitated_ShowCount = false;
-MIRA_Vehicle_Medical_Stable_ShowCount = true;
-MIRA_Vehicle_Medical_Stable_ThresholdLowBP = 80;
-MIRA_Vehicle_Medical_Stable_ThresholdLowHR = 50;
-MIRA_Vehicle_Medical_Stable_TrackFractures = true;
-MIRA_Vehicle_Medical_Stable_TrackIV = true;
-MIRA_Vehicle_Medical_Stable_TrackLowBP = true;
-MIRA_Vehicle_Medical_Stable_TrackLowHR = true;
-MIRA_Vehicle_Medical_Stable_TrackNeedsBandage = true;
-MIRA_Vehicle_Medical_Stable_TrackSplints = true;
-MIRA_Vehicle_Medical_Stable_TrackStitchableWounds = true;
-MIRA_Vehicle_Medical_Stable_TrackTourniquets = true;
-MIRA_Vehicle_Medical_Unstable_AllowUnload = true;
-MIRA_Vehicle_Medical_Unstable_DogtagsDeadOnly = true;
-MIRA_Vehicle_Medical_Unstable_ShowCount = true;
-MIRA_Vehicle_Medical_Unstable_TakeDogtags = true;
-MIRA_Vehicle_Medical_Unstable_ThresholdLowBP = 80;
-MIRA_Vehicle_Medical_Unstable_ThresholdLowHR = 50;
-MIRA_Vehicle_Medical_Unstable_TrackBleeding = true;
-MIRA_Vehicle_Medical_Unstable_TrackCardiacArrest = true;
-MIRA_Vehicle_Medical_Unstable_TrackDead = true;
-MIRA_Vehicle_Medical_Unstable_TrackIV = true;
-MIRA_Vehicle_Medical_Unstable_TrackLegFractures = true;
-MIRA_Vehicle_Medical_Unstable_TrackLegSplints = true;
-MIRA_Vehicle_Medical_Unstable_TrackLowBP = true;
-MIRA_Vehicle_Medical_Unstable_TrackLowHR = true;
-MIRA_Vehicle_Medical_Unstable_TrackUnconscious = true;
-MIRA_Vehicle_Medical_Vehicles_EnableCar = true;
-MIRA_Vehicle_Medical_Vehicles_EnableHelicopter = true;
-MIRA_Vehicle_Medical_Vehicles_EnablePlane = true;
-MIRA_Vehicle_Medical_Vehicles_EnableShip = true;
-MIRA_Vehicle_Medical_Vehicles_EnableTank = true;
-MIRA_Vehicle_Medical_VERSION = false;
-MIRA_Vehicle_Medical_WarnViewingDead = true;
-
 // ACE Vehicles
 force ace_novehicleclanlogo_enabled = false;
 ace_vehicles_hideEjectAction = true;
@@ -708,8 +679,6 @@ Achilles_var_LM_OPCAN_UNSC_MC_INF = true;
 Achilles_var_LM_OPCAN_URA = true;
 Achilles_var_O_AstraFederation = true;
 Achilles_var_O_HesetSemi_Organized = true;
-Achilles_var_O_SD = true;
-Achilles_var_O_TE = true;
 Achilles_var_OPF_F = true;
 Achilles_var_OPF_G_F = true;
 Achilles_var_OPF_GEN_F = true;
@@ -717,6 +686,7 @@ Achilles_var_OPF_R_F = true;
 Achilles_var_OPF_T_F = true;
 Achilles_var_OPF_V_F = true;
 Achilles_var_OPTRE_CAA = true;
+Achilles_var_OPTRE_DME = true;
 Achilles_var_OPTRE_FC_Covenant = true;
 Achilles_var_OPTRE_Ins = true;
 Achilles_var_OPTRE_PD = true;
@@ -729,6 +699,7 @@ Achilles_var_SC_Faction_SE = true;
 Achilles_var_SC_MDF = true;
 Achilles_var_TCF_Insurrectionist = true;
 Achilles_var_TCF_Neutral = true;
+Achilles_var_Tenthed_AstraFaction_Spartans = true;
 Achilles_var_Tenthed_UnitFact_Civilian_Insurrection = true;
 Achilles_var_Tenthed_UnitFact_Main = true;
 Achilles_var_Tenthed_UnitFact_Military_Insurrection = true;
@@ -890,21 +861,6 @@ UPSL_aime_vehicle_seats_setting_getin_action = true;
 UPSL_aime_vehicle_seats_setting_getout_action = true;
 UPSL_aime_vehicle_seats_setting_turnout_action = true;
 
-// Alternative Running (Client Settings)
-AR_DefaultAnimationPlayed = "ARMA_AlternativeRun";
-AR_DefaultAnimationPlayed_Bolt = "ARMA_AlternativeRun_WW2Style";
-AR_DefaultAnimationPlayed_MG = "ARMA_AlternativeRunLowered";
-
-// ArmaForces - Friendly Tracker
-afft_friendly_tracker_enabled = true;
-afft_friendly_tracker_GPS = false;
-afft_friendly_tracker_refreshRate = 5;
-afft_friendly_tracker_showAllGroups = true;
-afft_friendly_tracker_showGroups = 2;
-afft_friendly_tracker_showInvisible = false;
-afft_friendly_tracker_showUnconc = false;
-afft_friendly_tracker_showVehicle = false;
-
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = -1;
 force cba_diagnostic_watchInfoRefreshRate = 0.2;
@@ -917,6 +873,16 @@ cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
 
 // Crows Electronic Warfare
+crowsEW_spectrum_defaultClassForJammingSignal = "UGV_01_base_F,UGV_02_Base_F,UAV_01_base_F,UAV_02_base_F,UAV_03_base_F,UAV_04_base_F,UAV_05_Base_F,UAV_06_base_F";
+crowsEW_spectrum_minJamSigStrength = -40;
+crowsEW_spectrum_selfTracking = false;
+crowsEW_spectrum_spectrumAutoline = true;
+crowsEW_spectrum_spectrumAutolineColor1 = 2;
+crowsEW_spectrum_spectrumAutolineColor2 = 7;
+crowsEW_spectrum_spectrumAutolineColor3 = 8;
+crowsEW_spectrum_spectrumAutolineColor4 = 5;
+crowsEW_spectrum_spectrumAutolineLength = 6000;
+crowsEW_spectrum_spectrumAutolineNoise = 0;
 crowsEW_spectrum_spectrumEnable = true;
 crowsEW_spectrum_tfarSideTrack = false;
 
@@ -1126,6 +1092,35 @@ force grad_trenches_functions_vehicleEnvelopeDigTime = 20;
 force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
 force grad_trenches_functions_vehicleTrenchBuildSpeed = 5;
 
+// HBQ General
+force HBQSS_DebugEnabled = true;
+force HBQSS_DefaultPlayerCount = 10;
+force HBQSS_DeSpawnSecurityRadius = 600;
+force HBQSS_LeaderDistance = 0;
+force HBQSS_ProbabilityScalingEnabled = false;
+force HBQSS_RetreatGroupsize = 0;
+force HBQSS_SpawnSecurityRadius = 0;
+
+// HBQ Performance
+force HBQSS_AIFeatureActivationDelay = 1;
+force HBQSS_ChecksDelay = 5;
+force HBQSS_FPSlimit = 0;
+force HBQSS_LifeTime = 0;
+force HBQSS_MaxTotalAICount = 0;
+force HBQSS_OptimizedSpawnMethod = true;
+
+// HBQ Skills
+force HBQSS_aimingShake = 0.4;
+force HBQSS_AimingSkill = 0.4;
+force HBQSS_aimingSpeed = 0.4;
+force HBQSS_commanding = 0.4;
+force HBQSS_courage = 0.4;
+force HBQSS_general = 0.4;
+force HBQSS_reloadSpeed = 0.4;
+force HBQSS_spotDistance = 0.4;
+force HBQSS_spotTime = 0.4;
+force HBQSS_UseHBQSkills = true;
+
 // KPU Settings
 force BRIDGE_KPU_Distance = 3;
 force BRIDGE_KPU_MasterSetting = true;
@@ -1134,15 +1129,15 @@ force BRIDGE_KPU_Timer = 60;
 
 // LAMBS Danger
 force lambs_danger_cqbRange = 24.505;
-lambs_danger_disableAIAutonomousManoeuvres = false;
-lambs_danger_disableAIDeployStaticWeapons = false;
-lambs_danger_disableAIFindStaticWeapons = false;
-lambs_danger_disableAIHideFromTanksAndAircraft = false;
-lambs_danger_disableAIPlayerGroup = false;
-lambs_danger_disableAIPlayerGroupReaction = false;
+force lambs_danger_disableAIAutonomousManoeuvres = false;
+force lambs_danger_disableAIDeployStaticWeapons = false;
+force lambs_danger_disableAIFindStaticWeapons = false;
+force lambs_danger_disableAIHideFromTanksAndAircraft = false;
+force lambs_danger_disableAIPlayerGroup = false;
+force lambs_danger_disableAIPlayerGroupReaction = false;
 force lambs_danger_disableAutonomousFlares = true;
 force lambs_danger_disableAutonomousSmokeGrenades = true;
-force lambs_danger_panicChance = 0.05;
+force lambs_danger_panicChance = 0;
 
 // LAMBS Danger Eventhandlers
 force lambs_eventhandlers_ExplosionEventHandlerEnabled = false;
@@ -1160,68 +1155,72 @@ force lambs_main_debug_FSM_civ = false;
 force lambs_main_debug_functions = false;
 force lambs_main_debug_RenderExpectedDestination = false;
 force lambs_main_disableAICallouts = true;
-lambs_main_disableAIDodge = false;
+force lambs_main_disableAIDodge = false;
 force lambs_main_disableAIFleeing = true;
-lambs_main_disableAIGestures = false;
-lambs_main_disableAutonomousMunitionSwitching = false;
-lambs_main_disablePlayerGroupSuppression = false;
+force lambs_main_disableAIGestures = true;
+force lambs_main_disableAutonomousMunitionSwitching = false;
+force lambs_main_disablePlayerGroupSuppression = false;
 force lambs_main_indoorMove = 0.1;
 force lambs_main_maxRevealValue = 0.503616;
 force lambs_main_minFriendlySuppressionDistance = 5;
 force lambs_main_minObstacleProximity = 5;
 force lambs_main_minSuppressionRange = 50;
 force lambs_main_radioBackpack = 1500;
-lambs_main_radioDisabled = false;
+force lambs_main_radioDisabled = false;
 force lambs_main_radioEast = 500;
 force lambs_main_radioGuer = 500;
 force lambs_main_radioShout = 50;
 force lambs_main_radioWest = 500;
 
 // OPAEX Settings
-OPAEX_D20_Debug_ForcedSelection = "";
-OPAEX_D20_Debug_Mode = false;
+force OPAEX_D20_Debug_ForcedSelection = "";
+force OPAEX_D20_Debug_Mode = false;
 force OPAEX_D20_Enabled = false;
-OPAEX_Debug_Mode = false;
+force OPAEX_Debug_Mode = false;
 force OPAEX_SkeletonSwap_Enabled = true;
 
 // OPTRE Powered MJOLNIR
-force OPTRE_HELMET_HUD_EVA = "OPTRE_MJOLNIR_EVAHelmet,OPTRE_MJOLNIR_EVAHelmet_Emily";
-force OPTRE_HELMET_HUD_MARKIV = "OPTRE_MJOLNIR_Mk4Helmet,OPTRE_MJOLNIR_Mk4Helmet_Blue,OPTRE_MJOLNIR_Mk4Helmet_Red";
-force OPTRE_HELMET_HUD_MARKV = "OPTRE_FC_MJOLNIR_MKV_Helmet,OPTRE_FC_MJOLNIR_MKV_Helmet_Black,OPTRE_FC_MJOLNIR_MKV_Helmet_Caboose,OPTRE_FC_MJOLNIR_MKV_Helmet_Freeman,OPTRE_FC_MJOLNIR_MKV_Helmet_Church,OPTRE_FC_MJOLNIR_MKV_Helmet_Donut,OPTRE_FC_MJOLNIR_MKV_Helmet_Simmons,OPTRE_FC_MJOLNIR_MKV_Helmet_Night,OPTRE_FC_MJOLNIR_MKV_Helmet_Olive,OPTRE_FC_MJOLNIR_MKV_Helmet_Grif,OPTRE_FC_MJOLNIR_MKV_Helmet_Sarge,OPTRE_FC_MJOLNIR_MKV_Helmet_Tucker";
-force OPTRE_HELMET_HUD_MARKVB = "OPTRE_MJOLNIR_MkVBHelmet,OPTRE_MJOLNIR_MkVBHelmet_Red,OPTRE_MJOLNIR_MkVBHelmet_Blue,OPTRE_MJOLNIR_MkVBHelmet_Black,OPTRE_MJOLNIR_Commando,OPTRE_MJOLNIR_MkVBHelmet_BLKV,OPTRE_MJOLNIR_MkVBHelmet_BLUV,OPTRE_MJOLNIR_MkVBHelmet_SLVV,OPTRE_MJOLNIR_MkVBHelmet_Black_SLVV,OPTRE_MJOLNIR_Commando_DefaultV,OPTRE_MJOLNIR_Commando_SilverV,OPTRE_MJOLNIR_Commando_BlueV,OPTRE_MJOLNIR_Commando_BlackV,OPTRE_MJOLNIR_Commando_Black,OPTRE_MJOLNIR_Commando_Black_DefaultV,OPTRE_MJOLNIR_Commando_Black_SilverV,OPTRE_MJOLNIR_Commando_Black_BlueV,OPTRE_MJOLNIR_Commando_Black_BlackV,OPTRE_MJOLNIR_Commando_Blue,OPTRE_MJOLNIR_Commando_Blue_DefaultV,OPTRE_MJOLNIR_Commando_Blue_SilverV,OPTRE_MJOLNIR_Commando_Blue_BlueV,OPTRE_MJOLNIR_Commando_Blue_BlackV,OPTRE_MJOLNIR_Commando_Red,OPTRE_MJOLNIR_Commando_Red_DefaultV,OPTRE_MJOLNIR_Commando_Red_SilverV,OPTRE_MJOLNIR_Commando_Red_BlueV,OPTRE_MJOLNIR_Commando_Red_BlackV,OPTRE_MJOLNIR_CQB,OPTRE_MJOLNIR_CQC,OPTRE_MJOLNIR_Pilot,OPTRE_MJOLNIR_Operator,OPTRE_MJOLNIR_MkVBHelmet_UA,OPTRE_MJOLNIR_MkVBHelmet_UA_HUL";
-force OPTRE_HELMET_HUD_MARKVI = "OPTRE_FC_MJOLNIR_Mark_VI_Helmet,MJOLNIR_Mark_VI_Helmet_Caboose,MJOLNIR_Mark_VI_Helmet_Church,MJOLNIR_Mark_VI_Helmet_Desert,MJOLNIR_Mark_VI_Helmet_Doc,MJOLNIR_Mark_VI_Helmet_Donut,MJOLNIR_Mark_VI_Helmet_Grif,MJOLNIR_Mark_VI_Helmet_Kaikaina,MJOLNIR_Mark_VI_Helmet_Lopez,MJOLNIR_Mark_VI_Helmet_North,MJOLNIR_Mark_VI_Helmet_Simmons,MJOLNIR_Mark_VI_Helmet_Sarge,MJOLNIR_Mark_VI_Helmet_Snow,MJOLNIR_Mark_VI_Helmet_South,MJOLNIR_Mark_VI_Helmet_Tucker,MJOLNIR_Mark_VI_Helmet_Urban,MJOLNIR_Mark_VI_Helmet_Washington,MJOLNIR_Mark_VI_Helmet_Woodland,MJOLNIR_Mark_VI_Helmet_York";
-force OPTRE_HELMET_HUD_MP = "OPTRE_MJOLNIR_MPHelmet";
-force OPTRE_HELMET_HUD_RECON = "OPTRE_MJOLNIR_ReconHelmet";
-force OPTRE_HELMET_HUD_SANGHEILI = "OPTRE_FC_Elite_Helmet_FieldMarshal,OPTRE_FC_Elite_Helmet_HonorGuard_Ultra,OPTRE_FC_Elite_Helmet_HonorGuard,OPTRE_FC_Elite_Helmet_Major,OPTRE_FC_Elite_Helmet_Minor,OPTRE_FC_Elite_Helmet_SpecOps,OPTRE_FC_Elite_Helmet_Ultra,OPTRE_FC_Elite_Helmet_Zealot";
-OPTRE_HUD_SHIELD_BAR_HEIGHT = "0.057079";
-OPTRE_HUD_SHIELD_BAR_POS_X = "0.396875";
-OPTRE_HUD_SHIELD_BAR_POS_Y = "0.055897";
-force OPTRE_HUD_SHIELD_BAR_TEXTURE = "\A3\ui_f\data\GUI\RscCommon\RscProgress\progressbar_ca.paa";
-OPTRE_HUD_SHIELD_BAR_WIDTH = "0.206250";
-force OPTRE_HUD_TEXTURE_EVA = "\OPTRE_Suit_Scripts\textures\EVA_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_MARKIV = "\OPTRE_Suit_Scripts\textures\MarkIV_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_MARKV = "\OPTRE_Suit_Scripts\textures\MarkV_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_MARKVB = "\OPTRE_Suit_Scripts\textures\MarkVI_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_MARKVI = "\OPTRE_Suit_Scripts\textures\MarkVI_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_MP = "\OPTRE_Suit_Scripts\textures\MP_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_RECON = "\OPTRE_Suit_Scripts\textures\RECON_Hud_No_Crosshair.paa";
-force OPTRE_HUD_TEXTURE_SANGHEILI = "\OPTRE_Suit_Scripts\textures\Sangheili_Hud_No_Crosshair.paa";
-force OPTRE_JUMP_SUITS_SETTING = "OPTRE_MJOLNIR_Undersuit,OPTRE_MJOLNIR_Dress_Uniform,MJOLNIR_MKVI_Undersuit,OPTRE_FC_Elite_CombatSkin";
+OPTRE_HUD_ENEMY_COLOR = [1,0.2,0.2,1];
+OPTRE_HUD_FRIENDLY_COLOR = [0.7,1,1,1];
+OPTRE_HUD_GROUP_COLOR = [1,1,1,1];
+OPTRE_HUD_HUMAN_ICON = "\OPTRE_Suit_Scripts\textures\OPTRE_MJOLNIR_hudTargetInfantry.paa";
+OPTRE_HUD_HUMAN_SIZE = 0.3;
+OPTRE_HUD_NEUTRAL_COLOR = [1,1,0,1];
+OPTRE_HUD_STATIC_ICON = "\OPTRE_Suit_Scripts\textures\OPTRE_MJOLNIR_hudTargetEmplacement.paa";
+OPTRE_HUD_STATIC_SIZE = 0.4;
+OPTRE_HUD_VEHICLE_ICON = "\OPTRE_Suit_Scripts\textures\OPTRE_MJOLNIR_hudTargetVehicle.paa";
+OPTRE_HUD_VEHICLE_SIZE = 0.6;
+force OPTRE_JUMP_SUITS_SETTING = "OPTRE_MJOLNIR_Undersuit,OPTRE_MJOLNIR_Dress_Uniform,OPTRE_FC_MJOLNIR_MKVI_Undersuit,OPTRE_FC_Elite_CombatSkin";
 force OPTRE_MJOLNIR_ACTIVATE_AI = true;
-OPTRE_MJOLNIR_CAMSHAKE = true;
-force OPTRE_MJOLNIR_ENABLE_JUMP = true;
+force OPTRE_MJOLNIR_ALLOW_LOWLIGHT_SETTING = true;
+force OPTRE_MJOLNIR_ALLOW_TARGETING_SETTING = false;
+OPTRE_MJOLNIR_BOOTUP_COLOR = [0.694,0.933,0.345,1];
+force OPTRE_MJOLNIR_CAMSHAKE = false;
+OPTRE_MJOLNIR_CHARGE_EFFECT_COLOR = [0.8,1,1,0.2];
+OPTRE_MJOLNIR_CHARGE_TEXTURE_COLOR = [0.8,1,1,1];
+OPTRE_MJOLNIR_DEPLETED_ALERT_COLOR = [1,0.2,0.2,0.8];
+OPTRE_MJOLNIR_DEPLETED_EFFECT_COLOR = [1,0.2,0.2,1];
+force OPTRE_MJOLNIR_ENABLE_JUMP = false;
 force OPTRE_MJOLNIR_ENABLE_SPARKS_HIT = true;
 force OPTRE_MJOLNIR_ENABLE_SPARKS_SHIELD = true;
-OPTRE_MJOLNIR_ENERGY_BAR_ACTIVE = true;
+force OPTRE_MJOLNIR_ENERGY_BAR_ACTIVE = false;
 OPTRE_MJOLNIR_ENERGY_BAR_COLOR = [0.5,0.9,0.9,0.8];
-OPTRE_MJOLNIR_HUD_ACTIVE_INTRO = true;
-OPTRE_MJOLNIR_HUD_OVERLAY = true;
-force OPTRE_MJOLNIR_INCREASED_SPEED = true;
+OPTRE_MJOLNIR_ENERGY_BAR_TEXT_COLOR = [0.7,1,1,0.8];
+OPTRE_MJOLNIR_HITEFFECT_COLOR = [1,1,0.2,1];
+OPTRE_MJOLNIR_HITEFFECT_DEPLETED_COLOR = [1,0.2,0.2,1];
+force OPTRE_MJOLNIR_HUD_ACTIVE_INTRO = false;
+force OPTRE_MJOLNIR_INCREASED_SPEED = false;
+OPTRE_MJOLNIR_INFODISPLAY_COLOR = [0.7,1,1,0.8];
+OPTRE_MJOLNIR_INFOTEXT_COLOR = [0.7,1,1,0.8];
 force OPTRE_MJOLNIR_JUMP_FORWARD = 3;
 force OPTRE_MJOLNIR_JUMP_UP_HIGH = 3;
 force OPTRE_MJOLNIR_JUMP_UP_LOW = 5;
-force OPTRE_MJOLNIR_PREVENT_FALLDAMAGE = true;
+OPTRE_MJOLNIR_OVERLAY_COLOR = [0.7,1,1,0.4];
+OPTRE_MJOLNIR_OVERWRITE_CONFIG_SHIELD = false;
+force OPTRE_MJOLNIR_PREVENT_FALLDAMAGE = false;
+OPTRE_MJOLNIR_RADAR_COLOR = [0.7,1,1,0.8];
 force OPTRE_MJOLNIR_RECOIL_MODIFIER = 0.3;
+force OPTRE_MJOLNIR_SHIELD_DELAY = 0.1;
 force OPTRE_MJOLNIR_SHIELD_ENERGY = 100;
 force OPTRE_MJOLNIR_SHIELD_ENERGY_AI = 100;
 force OPTRE_MJOLNIR_SHIELD_MODIFIER_1 = 1;
@@ -1237,17 +1236,27 @@ force OPTRE_MJOLNIR_SHIELD_MODIFIER_SUITS_5 = "OPTRE_FC_Elite_Armor_HonorGuard,O
 force OPTRE_MJOLNIR_SHIELD_REGEN = 1;
 force OPTRE_MJOLNIR_SHIELD_REGEN_AI = 1;
 force OPTRE_MJOLNIR_SHOW_ACTIVATE = true;
-OPTRE_MJOLNIR_SHOW_DEACTIVATE = false;
+force OPTRE_MJOLNIR_SHOW_DEACTIVATE = false;
+force OPTRE_MJOLNIR_SHOW_OUTLINE = false;
+force OPTRE_MJOLNIR_SHOW_OVERLAY = false;
 force OPTRE_MJOLNIR_SPEED_MODIFIER = 1.3;
-force OPTRE_MJOLNIR_SUPPRESS_RECOIL = true;
-force OPTRE_POWERED_SUITS_SETTING = "OPTRE_MJOLNIR_Mk4Armor,OPTRE_MJOLNIR_Mk4Armor_Blue,OPTRE_MJOLNIR_Mk4Armor_Red,OPTRE_FC_MJOLNIR_MKV_Armor,OPTRE_FC_MJOLNIR_MKV_Armor_Black,OPTRE_FC_MJOLNIR_MKV_Armor_Caboose,OPTRE_FC_MJOLNIR_MKV_Armor_Freeman,OPTRE_FC_MJOLNIR_MKV_Armor_Church,OPTRE_FC_MJOLNIR_MKV_Armor_Donut,OPTRE_FC_MJOLNIR_MKV_Armor_Simmons,OPTRE_FC_MJOLNIR_MKV_Armor_Night,OPTRE_FC_MJOLNIR_MKV_Armor_Olive,OPTRE_FC_MJOLNIR_MKV_Armor_Grif,OPTRE_FC_MJOLNIR_MKV_Armor_Sarge,OPTRE_FC_MJOLNIR_MKV_Armor_Tucker,OPTRE_MJOLNIR_MkVBArmor,OPTRE_FC_MJOLNIR_Mark_VI_Armor,MJOLNIR_Mark_VI_Armour_Caboose,MJOLNIR_Mark_VI_Armour_Church,MJOLNIR_Mark_VI_Armour_Doc,MJOLNIR_Mark_VI_Armour_Desert,MJOLNIR_Mark_VI_Armour_Donut,MJOLNIR_Mark_VI_Armour_Grif,MJOLNIR_Mark_VI_Armour_Kaikaina,MJOLNIR_Mark_VI_Armour_Lopez,MJOLNIR_Mark_VI_Armour_North,MJOLNIR_Mark_VI_Armour_Sarge,MJOLNIR_Mark_VI_Armour_Simmons,MJOLNIR_Mark_VI_Armour_Snow,MJOLNIR_Mark_VI_Armour_South,MJOLNIR_Mark_VI_Armour_Tucker,MJOLNIR_Mark_VI_Armour_Urban,MJOLNIR_Mark_VI_Armour_Washington,MJOLNIR_Mark_VI_Armour_Woodland,MJOLNIR_Mark_VI_Armour_York,OPTRE_FC_Elite_Armor_FieldMarshal,OPTRE_FC_Elite_Armor_HonorGuard_Ultra,OPTRE_FC_Elite_Armor_HonorGuard,OPTRE_FC_Elite_Armor_Major,OPTRE_FC_Elite_Armor_Minor,OPTRE_FC_Elite_Armor_SpecOps,OPTRE_FC_Elite_Armor_Ultra,OPTRE_FC_Elite_Armor_Zealot";
+force OPTRE_MJOLNIR_SUPPRESS_RECOIL = false;
+force OPTRE_MJOLNIR_TARGETING_INTERVAL_RANGE_SETTING = 100;
+force OPTRE_MJOLNIR_TARGETING_MAX_RANGE_SETTING = 1000;
+force OPTRE_MJOLNIR_TARGETING_MIN_RANGE_SETTING = 100;
+OPTRE_MJOLNIR_WEAPON_ICON_COLOR = [0.7,1,1,0.8];
+force OPTRE_POWERED_HELMETS = "OPTRE_MJOLNIR_Mk4Helmet,OPTRE_MJOLNIR_Mk4Helmet_Blue,OPTRE_MJOLNIR_Mk4Helmet_Red,OPTRE_FC_MJOLNIR_MKV_Helmet,OPTRE_FC_MJOLNIR_MKV_Helmet_Black,OPTRE_FC_MJOLNIR_MKV_Helmet_117,OPTRE_FC_MJOLNIR_MKV_Helmet_Caboose,OPTRE_FC_MJOLNIR_MKV_Helmet_Freeman,OPTRE_FC_MJOLNIR_MKV_Helmet_Church,OPTRE_FC_MJOLNIR_MKV_Helmet_Donut,OPTRE_FC_MJOLNIR_MKV_Helmet_Simmons,OPTRE_FC_MJOLNIR_MKV_Helmet_Night,OPTRE_FC_MJOLNIR_MKV_Helmet_Olive,OPTRE_FC_MJOLNIR_MKV_Helmet_Grif,OPTRE_FC_MJOLNIR_MKV_Helmet_Sarge,OPTRE_FC_MJOLNIR_MKV_Helmet_Tucker,OPTRE_MJOLNIR_MkVBHelmet,OPTRE_MJOLNIR_MkVBHelmet_UA,OPTRE_MJOLNIR_MkVBHelmet_UA_HUL,OPTRE_MJOLNIR_MkVBHelmet_Red,OPTRE_MJOLNIR_MkVBHelmet_Blue,OPTRE_MJOLNIR_MkVBHelmet_Black,OPTRE_MJOLNIR_Commando,OPTRE_MJOLNIR_Commando_HUL3,OPTRE_MJOLNIR_Commando_DefaultV_HUL3,OPTRE_MJOLNIR_Commando_SilverV_HUL3,OPTRE_MJOLNIR_Commando_BlueV_HUL3,OPTRE_MJOLNIR_Commando_BlackV_HUL3,OPTRE_MJOLNIR_Commando_Black_HUL3,OPTRE_MJOLNIR_Commando_Black_DefaultV_HUL3,OPTRE_MJOLNIR_Commando_Black_SilverV_HUL3,OPTRE_MJOLNIR_Commando_Black_BlueV_HUL3,OPTRE_MJOLNIR_Commando_Black_BlackV_HUL3,OPTRE_MJOLNIR_Commando_Blue_HUL3,OPTRE_MJOLNIR_Commando_Blue_DefaultV_HUL3,OPTRE_MJOLNIR_Commando_Blue_SilverV_HUL3,OPTRE_MJOLNIR_Commando_Blue_BlueV_HUL3,OPTRE_MJOLNIR_Commando_Blue_BlackV_HUL3,OPTRE_MJOLNIR_Commando_Red_HUL3,OPTRE_MJOLNIR_Commando_Red_DefaultV_HUL3,OPTRE_MJOLNIR_Commando_Red_SilverV_HUL3,OPTRE_MJOLNIR_Commando_Red_BlueV_HUL3,OPTRE_MJOLNIR_Commando_Red_BlackV_HUL3,OPTRE_MJOLNIR_MkVBHelmet_BLKV,OPTRE_MJOLNIR_MkVBHelmet_BLUV,OPTRE_MJOLNIR_MkVBHelmet_SLVV,OPTRE_MJOLNIR_MkVBHelmet_Black_SLVV,OPTRE_MJOLNIR_Commando_DefaultV,OPTRE_MJOLNIR_Commando_SilverV,OPTRE_MJOLNIR_Commando_BlueV,OPTRE_MJOLNIR_Commando_BlackV,OPTRE_MJOLNIR_Commando_Black,OPTRE_MJOLNIR_Commando_Black_DefaultV,OPTRE_MJOLNIR_Commando_Black_SilverV,OPTRE_MJOLNIR_Commando_Black_BlueV,OPTRE_MJOLNIR_Commando_Black_BlackV,OPTRE_MJOLNIR_Commando_Blue,OPTRE_MJOLNIR_Commando_Blue_DefaultV,OPTRE_MJOLNIR_Commando_Blue_SilverV,OPTRE_MJOLNIR_Commando_Blue_BlueV,OPTRE_MJOLNIR_Commando_Blue_BlackV,OPTRE_MJOLNIR_Commando_Red,OPTRE_MJOLNIR_Commando_Red_DefaultV,OPTRE_MJOLNIR_Commando_Red_SilverV,OPTRE_MJOLNIR_Commando_Red_BlueV,OPTRE_MJOLNIR_Commando_Red_BlackV,OPTRE_MJOLNIR_CQB,OPTRE_MJOLNIR_CQC,OPTRE_MJOLNIR_Pilot,OPTRE_MJOLNIR_Operator,OPTRE_MJOLNIR_EOD,OPTRE_MJOLNIR_ODST,OPTRE_FC_MJOLNIR_Mark_VI_Helmet,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_White,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Olive,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Tan,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Tex,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Caboose,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Church,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Donut,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Grif,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Simmons,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Sarge,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Kaikaina,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Lopez,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Doc,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_North,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_South,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_York,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Washington,OPTRE_FC_MJOLNIR_Mark_VI_Helmet_Tucker,OPTRE_MJOLNIR_EVAHelmet,OPTRE_MJOLNIR_EVAHelmet_Emily,OPTRE_MJOLNIR_MPHelmet,OPTRE_MJOLNIR_ReconHelmet,OPTRE_FC_Elite_Helmet_FieldMarshal,OPTRE_FC_Elite_Helmet_HonorGuard_Ultra,OPTRE_FC_Elite_Helmet_HonorGuard,OPTRE_FC_Elite_Helmet_Major,OPTRE_FC_Elite_Helmet_Officer,OPTRE_FC_Elite_Helmet_Minor,OPTRE_FC_Elite_Helmet_SpecOps,OPTRE_FC_Elite_Helmet_Ultra,OPTRE_FC_Elite_Helmet_Zealot";
+force OPTRE_POWERED_SUITS_SETTING = "OPTRE_Grunt_Shield,OPTRE_MJOLNIR_Mk4Armor,OPTRE_MJOLNIR_Mk4Armor_Blue,OPTRE_MJOLNIR_Mk4Armor_Red,OPTRE_FC_MJOLNIR_MKV_Armor,OPTRE_FC_MJOLNIR_MKV_Armor_Black,OPTRE_FC_MJOLNIR_MKV_Armor_117,OPTRE_FC_MJOLNIR_MKV_Armor_Caboose,OPTRE_FC_MJOLNIR_MKV_Armor_Freeman,OPTRE_FC_MJOLNIR_MKV_Armor_Church,OPTRE_FC_MJOLNIR_MKV_Armor_Donut,OPTRE_FC_MJOLNIR_MKV_Armor_Simmons,OPTRE_FC_MJOLNIR_MKV_Armor_Night,OPTRE_FC_MJOLNIR_MKV_Armor_Olive,OPTRE_FC_MJOLNIR_MKV_Armor_Grif,OPTRE_FC_MJOLNIR_MKV_Armor_Sarge,OPTRE_FC_MJOLNIR_MKV_Armor_Tucker,OPTRE_MJOLNIR_MkVBArmor,OPTRE_FC_MJOLNIR_Mark_VI_Armor,OPTRE_FC_MJOLNIR_Mark_VI_Armor_White,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Olive,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Tan,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Tex,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Caboose,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Church,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Tucker,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Donut,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Grif,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Simmons,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Sarge,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Kaikaina,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Lopez,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Doc,OPTRE_FC_MJOLNIR_Mark_VI_Armor_North,OPTRE_FC_MJOLNIR_Mark_VI_Armor_South,OPTRE_FC_MJOLNIR_Mark_VI_Armor_York,OPTRE_FC_MJOLNIR_Mark_VI_Armor_Washington,OPTRE_FC_Elite_Armor_FieldMarshal,OPTRE_FC_Elite_Armor_HonorGuard_Ultra,OPTRE_FC_Elite_Armor_HonorGuard,OPTRE_FC_Elite_Armor_Major,OPTRE_FC_Elite_Armor_Officer,OPTRE_FC_Elite_Armor_Minor,OPTRE_FC_Elite_Armor_SpecOps,OPTRE_FC_Elite_Armor_Ultra,OPTRE_FC_Elite_Armor_Zealot,OPTRE_MJOLNIR_MkVBArmor2,OPTRE_MJOLNIR_MkVBArmor3,OPTRE_MJOLNIR_MkVBArmor4,OPTRE_MJOLNIR_MkVBArmor5,OPTRE_MJOLNIR_MkVBArmor6,OPTRE_MJOLNIR_MkVBArmor7,OPTRE_MJOLNIR_MkVBArmor8,OPTRE_MJOLNIR_MkVBArmor_FJPARA1,OPTRE_MJOLNIR_MkVBArmor_FJPARA2,OPTRE_MJOLNIR_MkVBArmor_FJPARA3,OPTRE_MJOLNIR_MkVBArmor_FJPARA4,OPTRE_MJOLNIR_MkVBArmor_FJPARA5,OPTRE_MJOLNIR_MkVBArmor_FJPARA6,OPTRE_MJOLNIR_MkVBArmor_FJPARA7,OPTRE_MJOLNIR_MkVBArmor_FJPARA8,OPTRE_MJOLNIR_MkVBArmor_FJPARA9,OPTRE_MJOLNIR_MkVBArmor_Commando,OPTRE_MJOLNIR_MkVBArmor_Commando2,OPTRE_MJOLNIR_MkVBArmor_Commando3,OPTRE_MJOLNIR_MkVBArmor_Commando4,OPTRE_MJOLNIR_MkVBArmor_Commando5,OPTRE_MJOLNIR_MkVBArmor_Commando6,OPTRE_MJOLNIR_MkVBArmor_Commando7,OPTRE_MJOLNIR_MkVBArmor_Commando8,OPTRE_MJOLNIR_MkVBArmor_MkV,OPTRE_MJOLNIR_MkVBArmor_MkV2,OPTRE_MJOLNIR_MkVBArmor_MkV3,OPTRE_MJOLNIR_MkVBArmor_MkV4,OPTRE_MJOLNIR_MkVBArmor_MkV5,OPTRE_MJOLNIR_MkVBArmor_MkV6,OPTRE_MJOLNIR_MkVBArmor_MkV7,OPTRE_MJOLNIR_MkVBArmor_MkV8,OPTRE_MJOLNIR_MkVBArmor_Red,OPTRE_MJOLNIR_MkVBArmor_Blue,OPTRE_MJOLNIR_MkVBArmor_Black,OPTRE_MJOLNIR_MkVBArmor_Default,OPTRE_MJOLNIR_MkVBArmor_Default2,OPTRE_MJOLNIR_MkVBArmor_Default3,OPTRE_MJOLNIR_MkVBArmor_Default4,OPTRE_MJOLNIR_MkVBArmor_Default5,OPTRE_MJOLNIR_MkVBArmor_Default6,OPTRE_MJOLNIR_MkVBArmor_Default7,OPTRE_MJOLNIR_MkVBArmor_Default8,OPTRE_MJOLNIR_MkVBArmor_Default9,OPTRE_MJOLNIR_MkVBArmor_Default10,OPTRE_MJOLNIR_MkVBArmor_Default11,OPTRE_MJOLNIR_MkVBArmor_Default_Black,OPTRE_MJOLNIR_MkVBArmor_Default_Red,OPTRE_MJOLNIR_MkVBArmor_Default_Blue,OPTRE_MJOLNIR_MkVBArmor_Grenadier,OPTRE_MJOLNIR_MkVBArmor_Grenadier2,OPTRE_MJOLNIR_MkVBArmor_Grenadier3,OPTRE_MJOLNIR_MkVBArmor_Grenadier4,OPTRE_MJOLNIR_MkVBArmor_Grenadier5,OPTRE_MJOLNIR_MkVBArmor_Grenadier6,OPTRE_MJOLNIR_MkVBArmor_Grenadier7,OPTRE_MJOLNIR_MkVBArmor_Grenadier8,OPTRE_MJOLNIR_MkVBArmor_Grenadier9,OPTRE_MJOLNIR_MkVBArmor_CQC,OPTRE_MJOLNIR_MkVBArmor_CQC2,OPTRE_MJOLNIR_MkVBArmor_CQC3,OPTRE_MJOLNIR_MkVBArmor_CQC4,OPTRE_MJOLNIR_MkVBArmor_CQC5,OPTRE_MJOLNIR_MkVBArmor_CQC6,OPTRE_MJOLNIR_MkVBArmor_CQC7,OPTRE_MJOLNIR_MkVBArmor_CQC8,OPTRE_MJOLNIR_MkVBArmor_CQC9,OPTRE_MJOLNIR_MkVBArmor_CQC10,OPTRE_MJOLNIR_MkVBArmor_CQC11,OPTRE_MJOLNIR_MkVBArmor_CQC12,OPTRE_MJOLNIR_MkVBArmor_CQC13,OPTRE_MJOLNIR_MkVBArmor_CQC14,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees3,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees4,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees5,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees6,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA2,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA3,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA4,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA5,OPTRE_MJOLNIR_MkVBArmor_Collar_Gren_UA6OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Knees1,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Knees2,OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Knees_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Knees_Collar2,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Collar,OPTRE_MJOLNIR_MkVBArmor_Commando_Collar,OPTRE_MJOLNIR_MkVBArmor_MkV_Collar,OPTRE_MJOLNIR_MkVBArmor_Grenadier_Collar,OPTRE_MJOLNIR_MkVBArmor_CQC_Collar,OPTRE_MJOLNIR_MkVBArmor2_Collar,OPTRE_MJOLNIR_MkVBArmor_FJPARA_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor_Commando_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor_MkV_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor_Grenadier_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor_CQC_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor2_Knees_CollarBase,OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_ParaCQC_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaCommando_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaGrenadier_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaMarkV_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_ParaSecurity_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CQCPara_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCCommando_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCGrenadier_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCMarkV_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CQCSecurity_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_CommandoPara_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoCQC_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoGrenadier_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoMarkV_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_CommandoSecurity_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_GrenadierPara_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCQC_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierCommando_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierMarkV_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_GrenadierSecurity_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_MarkVPara_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVCQC_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVCommando_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVGrenadier_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_MarkVSecurity_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Collar1,OPTRE_MJOLNIR_MkVBArmor_SecurityPara_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityCQC_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityCommando_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityGrenadier_FJPARA_Collar2,OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Collar2";
+force OPTRE_START_ON_INIT = true;
 
 // OPTRE Settings
 OPTRE_AircraftHUD_colour = [0.082,0.408,0.039,1];
-OPTRE_Debug_Mode = false;
+force OPTRE_Debug_Mode = false;
+OPTRE_Enable_AI_Door_On_Gear_Pelican = true;
 force OPTRE_Enable_Humans_To_Detach = false;
+OPTRE_Enable_Player_Door_On_Gear_Pelican = true;
 force OPTRE_Enable_Supercombustion_dev = true;
-force OPTRE_Enable_Turret_Detach = true;
+force OPTRE_Enable_Turret_Detach = false;
 force OPTRE_Hijack_FriendlyFireEnabled = true;
 force OPTRE_Hijack_Mode = 1;
 force OPTRE_Human_Non_Detachable_Turrets = "";
@@ -1255,7 +1264,12 @@ force OPTRE_Jackal_Randomize = false;
 force OPTRE_Spartan_Non_Detachable_Turrets = "";
 force OPTRE_Spartan_Randomize = false;
 
+// OPTRE:FC Settings
+OPTRE_Enable_AI_Door_On_Gear_Spirit = true;
+OPTRE_Enable_Player_Door_On_Gear_Spirit = true;
+
 // Sci-fi Support PLUS
+ScifiSupportPlus_AmbientShipSound_Radius = "5000";
 force ScifiSupportPlus_Archer = true;
 force ScifiSupportPlus_ArcherBarrage = true;
 force ScifiSupportPlus_CrashShip = true;
@@ -1264,11 +1278,11 @@ force ScifiSupportPlus_EXTERMINATUSVirus = false;
 force ScifiSupportPlus_JumpShipIn = true;
 force ScifiSupportPlus_JumpShipOut = true;
 force ScifiSupportPlus_MACStrike = true;
-force ScifiSupportPlus_MoveShip = true;
+ScifiSupportPlus_MoveShip_Speed = "0.001";
 force ScifiSupportPlus_OrbitalAutocannon = true;
 force ScifiSupportPlus_Pelicanvehicledrop = true;
-force ScifiSupportPlus_SelectShip = true;
 force ScifiSupportPlus_ShredderCannon = true;
+ScifiSupportPlus_UNSC_ArmedFrigate = true;
 force ScifiSupportPlus_UNSC_ConstructionPod = true;
 force ScifiSupportPlus_UNSC_OrbitalVehicleDeployment = true;
 force ScifiSupportPlus_UNSC_sup_pod = true;
@@ -1280,7 +1294,7 @@ force sc_scripts_grapplinghook_everyoneHasGrapplingHook = false;
 force sc_scripts_grapplinghook_grapplingSpeedCoef = 20;
 force sc_scripts_grapplinghook_maxGrapplingTime = 5;
 force sc_scripts_grapplinghook_maxRange = 100;
-sc_scripts_grapplinghook_safetyCheck = true;
+force sc_scripts_grapplinghook_safetyCheck = true;
 force sc_scripts_jumppack_dodgeCooldown = 1;
 force sc_scripts_jumppack_dodgeMultiplier = 7.5;
 force sc_scripts_jumppack_everyoneHasJumpPack = false;
@@ -1373,28 +1387,14 @@ force tts_beam_structureFireMinDuration = 60;
 force tts_beam_structureFiresEnabled = true;
 force tts_beam_vaporiseBodies = true;
 
-// Turret Enhanced
-Fat_Lurch_Grid = true;
-Fat_Lurch_GridNum = 6;
-Fat_Lurch_MapSlew = true;
-Fat_Lurch_Markers = true;
-Fat_Lurch_Measure = true;
-Fat_Lurch_ShowAz = true;
-Fat_Lurch_ShowEl = true;
-Fat_Lurch_ShowNorth = true;
-Fat_Lurch_ShowTarget = true;
-
 // Zeus Additions
 zeus_additions_main_AABLU_mags = "[""rhs_fim92_mag"",""Titan_AA""]";
 zeus_additions_main_AARED_mags = "[""rhs_mag_9k38_rocket"",""Titan_AA""]";
 zeus_additions_main_blacklistFKEnable = false;
 zeus_additions_main_blacklistSettings = "[]";
-zeus_additions_main_enableACECargoHint = true;
 zeus_additions_main_enableACEDragHint = true;
 zeus_additions_main_enableACEMedicalHint = true;
 zeus_additions_main_enableBuildingDestructionHandling = false;
-zeus_additions_main_enableExitUnconsciousUnit = false;
-zeus_additions_main_enableJIP = false;
 zeus_additions_main_enableMissionCounter = false;
 zeus_additions_main_enableRHSHint = true;
 zeus_additions_main_enableTFARHint = true;
@@ -1413,7 +1413,7 @@ zen_camera_defaultSpeedCoef = 1;
 zen_camera_fastSpeedCoef = 1;
 zen_camera_followTerrain = true;
 force zen_common_ascensionMessages = false;
-force zen_common_autoAddObjects = false;
+force zen_common_autoAddObjects = true;
 force zen_common_cameraBird = false;
 zen_common_darkMode = false;
 zen_common_disableGearAnim = false;
@@ -1431,7 +1431,7 @@ zen_editor_previews_enabled = true;
 zen_editor_randomizeCopyPaste = false;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 0;
-zen_placement_enabled = true;
+force zen_placement_enabled = true;
 zen_remote_control_cameraExitPosition = 2;
 zen_visibility_enabled = 0;
 zen_visibility_maxDistance = 5000;
@@ -1493,8 +1493,9 @@ zen_attributes_enableWaypointTimeout = true;
 zen_attributes_enableWaypointType = true;
 
 // Zeus Enhanced - Faction Filter
+zen_faction_filter_0_AstraFederation_Spartans_Groups = true;
 force zen_faction_filter_0_Awakened = true;
-zen_faction_filter_0_Default = false;
+force zen_faction_filter_0_Default = true;
 force zen_faction_filter_0_LM_OOPCAN_SU_groups = true;
 force zen_faction_filter_0_LM_OPCAN_FRI = true;
 force zen_faction_filter_0_LM_OPCAN_FRI_DES = true;
@@ -1507,20 +1508,19 @@ force zen_faction_filter_0_LM_OPCAN_KOS_groups = true;
 force zen_faction_filter_0_LM_OPCAN_SU = true;
 force zen_faction_filter_0_LM_OPCAN_URA = true;
 force zen_faction_filter_0_LM_OPCAN_URA_groups = true;
-zen_faction_filter_0_O_AstraFederation = true;
-zen_faction_filter_0_O_HesetSemi_Organized = true;
-zen_faction_filter_0_O_SD = true;
-zen_faction_filter_0_O_TE = true;
-zen_faction_filter_0_OPF_F = false;
-zen_faction_filter_0_OPF_G_F = false;
-zen_faction_filter_0_OPF_GEN_F = false;
-zen_faction_filter_0_OPF_R_F = false;
-zen_faction_filter_0_OPF_T_F = false;
+force zen_faction_filter_0_O_AstraFederation = true;
+force zen_faction_filter_0_O_HesetSemi_Organized = true;
+force zen_faction_filter_0_OPF_F = true;
+force zen_faction_filter_0_OPF_G_F = true;
+force zen_faction_filter_0_OPF_GEN_F = true;
+force zen_faction_filter_0_OPF_R_F = true;
+force zen_faction_filter_0_OPF_T_F = true;
 force zen_faction_filter_0_OPTRE_FC_Covenant = true;
 force zen_faction_filter_0_OPTRE_Ins = true;
-zen_faction_filter_0_SC_Faction_SE = true;
-zen_faction_filter_0_SC_MDF = false;
-zen_faction_filter_0_SC_MDF_groups = false;
+zen_faction_filter_0_OPTRE_Ins_groups = true;
+force zen_faction_filter_0_SC_Faction_SE = true;
+force zen_faction_filter_0_SC_MDF = true;
+force zen_faction_filter_0_SC_MDF_groups = true;
 force zen_faction_filter_0_TCF_Biko = true;
 force zen_faction_filter_0_TCF_ER = true;
 force zen_faction_filter_0_TCF_Frieden = true;
@@ -1531,10 +1531,12 @@ force zen_faction_filter_0_TCF_Koslovic = true;
 force zen_faction_filter_0_TCF_OPFOR_Spacer = true;
 force zen_faction_filter_0_TCF_Seccessionists = true;
 force zen_faction_filter_0_TCF_Tauri = true;
-zen_faction_filter_0_TCF_URA = true;
-zen_faction_filter_0_TCF_URF = true;
-zen_faction_filter_0_Tenthed_EditorCategory_Main = true;
-zen_faction_filter_0_Tenthed_UnitFact_Military_Insurrection = true;
+force zen_faction_filter_0_TCF_URA = true;
+force zen_faction_filter_0_TCF_URF = true;
+zen_faction_filter_0_Tenthed_AstraFaction_Spartans = true;
+force zen_faction_filter_0_Tenthed_EditorCategory_Main = true;
+force zen_faction_filter_0_Tenthed_UnitFact_Military_Insurrection = true;
+zen_faction_filter_0_V_FZ_EdCat_URF = true;
 zen_faction_filter_1_BLU_CTRG_F = true;
 zen_faction_filter_1_BLU_F = true;
 zen_faction_filter_1_BLU_G_F = true;
@@ -1579,8 +1581,10 @@ zen_faction_filter_2_LM_OPCAN_CMA_groups = true;
 zen_faction_filter_2_LM_OPCAN_CPD = true;
 zen_faction_filter_2_LM_OPCAN_CPD_groups = true;
 zen_faction_filter_2_OPTRE_CAA = true;
+zen_faction_filter_2_OPTRE_DME = true;
 zen_faction_filter_2_OPTRE_FC_Covenant = true;
 zen_faction_filter_2_OPTRE_Ins = true;
+zen_faction_filter_2_OPTRE_Ins_groups = true;
 zen_faction_filter_2_OPTRE_PD = true;
 zen_faction_filter_2_OPTRE_UEG_Civ = true;
 zen_faction_filter_2_SC_ArchonsFaction = true;
@@ -1594,14 +1598,17 @@ zen_faction_filter_2_TCF_Office_Naval_Intelligence = true;
 zen_faction_filter_2_TCF_Sedran_Guard = true;
 zen_faction_filter_2_TCF_URF = true;
 zen_faction_filter_2_TCF_VPM = true;
+zen_faction_filter_2_TCF_Zeus_Spacer = true;
 zen_faction_filter_3_CIV_F = true;
 zen_faction_filter_3_CIV_IDAP_F = true;
 zen_faction_filter_3_EdCat_jbad_vehicles = true;
 zen_faction_filter_3_IND_L_F = true;
 zen_faction_filter_3_OPTRE_UEG_Civ = true;
+zen_faction_filter_3_plpCat_BeachObjects = true;
 zen_faction_filter_3_TCF_AAN = true;
 zen_faction_filter_3_TCF_CBN = true;
 zen_faction_filter_3_TCF_ISN = true;
 zen_faction_filter_3_TCF_Vehicle_Civillian = true;
-zen_faction_filter_3_TCF_Zeus_Spacer = true;
+zen_faction_filter_3_TCF_Zeus_Spacer_groups = true;
 zen_faction_filter_3_V_FZ_EdCat_CIV = true;
+zen_faction_filter_3_V_FZ_EdCat_Zulu = true;
